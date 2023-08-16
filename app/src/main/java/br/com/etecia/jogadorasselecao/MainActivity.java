@@ -1,6 +1,7 @@
 package br.com.etecia.jogadorasselecao;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -28,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
                         "Corinthians",
                         "Goleira",
                         R.drawable.leticia_i));
+
+        MyAdapter adapter = new MyAdapter(getApplicationContext(), listaJogadoras);
+
+        idRecyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
+
+        idRecyclerView.setHasFixedSize(true);
+
+        idRecyclerView.setAdapter(adapter);
 
     }
 }
