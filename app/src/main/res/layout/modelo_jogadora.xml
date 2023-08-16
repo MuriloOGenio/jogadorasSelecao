@@ -22,7 +22,7 @@
             android:src="@drawable/leticia_i" />
 
         <TextView
-            android:id="@+id/idTituloJogadoras"
+            android:id="@+id/idNomeJogadoras"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

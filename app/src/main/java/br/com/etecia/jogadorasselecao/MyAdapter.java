@@ -38,6 +38,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyAdapter.ViewHolder holder, int position) {
+        holder.idNomeJogadoras.setText(lstJogadoras.get(position).getNome());
 
     }
 
@@ -52,14 +53,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         ImageView idImagemJogadoras;
 
-        TextView idTxtJogadoras;
+        TextView idNomeJogadoras, idTitulosJogadoras, idTimesJogadoras, idPosicao;
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             idCardJogadoras = itemView.findViewById(R.id.idCardJogadoras);
             idImagemJogadoras = itemView.findViewById(R.id.idImagemJogadoras);
-            idTxtJogadoras = itemView.findViewById(R.id.idTituloJogadoras);
+            idNomeJogadoras = itemView.findViewById(R.id.idNomeJogadoras);
         }
     }
 }

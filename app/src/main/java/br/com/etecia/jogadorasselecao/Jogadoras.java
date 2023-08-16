@@ -6,11 +6,22 @@ public class Jogadoras {
     private String times;
     private String posicao;
 
-    public Jogadoras(String nome, String titulos, String times, String posicao) {
+    private int imagem;
+
+    public Jogadoras(String nome, String titulos, String times, String posicao, int imagem) {
         this.nome = nome;
         this.titulos = titulos;
         this.times = times;
         this.posicao = posicao;
+        this.imagem = imagem;
+    }
+
+    public int getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(int imagem) {
+        this.imagem = imagem;
     }
 
     public String getNome() {
