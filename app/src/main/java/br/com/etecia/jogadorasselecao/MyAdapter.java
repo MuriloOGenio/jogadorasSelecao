@@ -31,7 +31,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         View view;
 
         LayoutInflater inflate = LayoutInflater.from(mContexto);
-        view= inflate.inflate(R.layout.modelo_jogadora, parent, false);
+        view = inflate.inflate(R.layout.modelo_jogadora, parent, false);
 
         return new ViewHolder(view);
     }
@@ -39,12 +39,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyAdapter.ViewHolder holder, int position) {
         holder.idNomeJogadoras.setText(lstJogadoras.get(position).getNome());
+        holder.idImagemJogadoras.setImageResource(lstJogadoras.get(position).getImagem());
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return lstJogadoras.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
