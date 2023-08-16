@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ffd200"
+    android:background="@color/brasilsil"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seleção feminina"
-        android:textColor="#269d2b"
+        android:text="Seleção Feminina"
+        android:textColor="@color/texto"
         android:layout_gravity="center_horizontal"
         android:layout_margin="35sp"
         android:textSize="30sp"

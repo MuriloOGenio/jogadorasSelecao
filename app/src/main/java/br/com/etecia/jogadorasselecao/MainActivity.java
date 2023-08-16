@@ -29,6 +29,36 @@ public class MainActivity extends AppCompatActivity {
                         "Corinthians",
                         "Goleira",
                         R.drawable.leticia_i));
+        listaJogadoras.add(
+                new Jogadoras("Letícia Izidoro",
+                        "Libertadores da América",
+                        "Corinthians",
+                        "Goleira",
+                        R.drawable.leticia_i));
+        listaJogadoras.add(
+                new Jogadoras("Letícia Izidoro",
+                        "Libertadores da América",
+                        "Corinthians",
+                        "Goleira",
+                        R.drawable.leticia_i));
+        listaJogadoras.add(
+                new Jogadoras("Letícia Izidoro",
+                        "Libertadores da América",
+                        "Corinthians",
+                        "Goleira",
+                        R.drawable.leticia_i));
+        listaJogadoras.add(
+                new Jogadoras("Letícia Izidoro",
+                        "Libertadores da América",
+                        "Corinthians",
+                        "Goleira",
+                        R.drawable.leticia_i));
+        listaJogadoras.add(
+                new Jogadoras("Letícia Izidoro",
+                        "Libertadores da América",
+                        "Corinthians",
+                        "Goleira",
+                        R.drawable.leticia_i));
 
         MyAdapter adapter = new MyAdapter(getApplicationContext(), listaJogadoras);
 
